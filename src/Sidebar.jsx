@@ -6,7 +6,7 @@ function Sidebar() {
     <>
     <div className='m-3 position-fixed'>
     <div className='d-flex flex-column gap-3'>
-        <img  className="logo-text"src="\src\assets\instagram text.png"></img>
+        <img  className="logo-text"src="/images/instagram%20text.png"></img>
         <div> <i className="bi bi-house-door-fill"></i> Home</div>
         <div> <i className="bi bi-search"></i> Search</div>
         <div> <i className="bi bi-compass"></i> Explore</div>

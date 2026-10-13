@@ -4,23 +4,30 @@ function Suggestion() {
    const [profile, setprofile] = useState(null);
    const[suggestion,setsuggestion]=useState([]);
       useEffect(() => {
-          fetch('http://localhost:3000/suggestion')
+          fetch('/db/db.json')
               .then((response) =>
                   response.json())
-              .then((data) => setsuggestion(data))
+              .then((data) => setsuggestion(data.suggestion))
       }, [])
       useEffect(() => {
-          fetch('http://localhost:3000/profile')
+          fetch('/db/db.json')
               .then((response) =>
                   response.json())
-              .then((data) => setprofile(data))
+              .then((data) => setprofile(data.profile))
       }, [])
 
       const handlefollow=async(id,username)=>{
-        axios.post('http://localhost:3000/followers',{"id":id,"username":username})
-        alert("followed")
-        .catch(err=>console.log(err))
-      }
+       setFollowers((prevFollowers) => {
+        if (prevFollowers.some((follower) => follower.id === id)) {
+            alert("Already following");
+            return prevFollowers;
+        }
+
+        return [...prevFollowers, { id, username }];
+    });
+
+    alert("Followed");
+      };
 
 
   return (

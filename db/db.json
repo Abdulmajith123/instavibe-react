@@ -1,25 +1,10 @@
 {
   "rells": [
-    {
-      "id": "1",
-      "image": "/src/assets/s1.jpg"
-    },
-    {
-      "id": "2",
-      "image": "/src/assets/s2.jpg"
-    },
-    {
-      "id": "3",
-      "image": "/src/assets/s3.jpg"
-    },
-    {
-      "id": "4",
-      "image": "/src/assets/s4.jpg"
-    },
-    {
-      "id": "5",
-      "image": "/src/assets/s5.jpg"
-    }
+    { "id": "1", "image": "/images/s1.jpg" },
+    { "id": "2", "image": "/images/s2.jpg" },
+    { "id": "3", "image": "/images/s3.jpg" },
+    { "id": "4", "image": "/images/s4.jpg" },
+    { "id": "5", "image": "/images/s5.jpg" }
   ],
   "posts": [
     {
@@ -27,20 +12,14 @@
       "user": {
         "id": 101,
         "username": "john_doe",
-        "profile_pic": "src/assets/profilepic1.png"
+        "profile_pic": "/images/profilepic1.png"
       },
-      "image": "src/assets/post1.jpg",
+      "image": "/images/post1.jpg",
       "caption": "Beautiful sunset at the beach 🌅 #Nature",
       "likes": 120,
       "comments": [
-        {
-          "user": "alice_wonder",
-          "comment": "Wow! Amazing shot!"
-        },
-        {
-          "user": "mark_92",
-          "comment": "Where is this place?"
-        }
+        { "user": "alice_wonder", "comment": "Wow! Amazing shot!" },
+        { "user": "mark_92", "comment": "Where is this place?" }
       ],
       "timestamp": "2025-02-11T14:30:00Z"
     },
@@ -49,20 +28,14 @@
       "user": {
         "id": 102,
         "username": "sara_smith",
-        "profile_pic": "src/assets/profilepic2.png"
+        "profile_pic": "/images/profilepic2.png"
       },
-      "image": "src/assets/post2.jpg",
+      "image": "/images/post2.jpg",
       "caption": "Exploring the mountains 🏔️ #Travel",
       "likes": 95,
       "comments": [
-        {
-          "user": "john_doe",
-          "comment": "Looks peaceful!"
-        },
-        {
-          "user": "alex_king",
-          "comment": "I want to go there 😍"
-        }
+        { "user": "john_doe", "comment": "Looks peaceful!" },
+        { "user": "alex_king", "comment": "I want to go there 😍" }
       ],
       "timestamp": "2025-02-12T10:15:00Z"
     },
@@ -71,20 +44,14 @@
       "user": {
         "id": 103,
         "username": "tech_guru",
-        "profile_pic": "src/assets/profilepic3.png"
+        "profile_pic": "/images/profilepic3.png"
       },
-      "image": "src/assets/post3.jpg",
+      "image": "/images/post3.jpg",
       "caption": "New setup is ready 💻🔥 #CodingLife",
       "likes": 200,
       "comments": [
-        {
-          "user": "coder123",
-          "comment": "Clean setup bro!"
-        },
-        {
-          "user": "sara_smith",
-          "comment": "Which laptop is that?"
-        }
+        { "user": "coder123", "comment": "Clean setup bro!" },
+        { "user": "sara_smith", "comment": "Which laptop is that?" }
       ],
       "timestamp": "2025-02-13T18:45:00Z"
     },
@@ -93,20 +60,14 @@
       "user": {
         "id": 104,
         "username": "foodie_life",
-        "profile_pic": "src/assets/profilepic4.png"
+        "profile_pic": "/images/profilepic4.png"
       },
-      "image": "src/assets/post4.jpg",
+      "image": "/images/post4.jpg",
       "caption": "Delicious homemade pizza 🍕 #Food",
       "likes": 150,
       "comments": [
-        {
-          "user": "john_doe",
-          "comment": "Yummy!"
-        },
-        {
-          "user": "chef_max",
-          "comment": "Recipe please!"
-        }
+        { "user": "john_doe", "comment": "Yummy!" },
+        { "user": "chef_max", "comment": "Recipe please!" }
       ],
       "timestamp": "2025-02-14T12:00:00Z"
     },
@@ -115,20 +76,14 @@
       "user": {
         "id": 105,
         "username": "fitness_freak",
-        "profile_pic": "src/assets/profilepic5.png"
+        "profile_pic": "/images/profilepic5.png"
       },
-      "image": "src/assets/post5.jpg",
+      "image": "/images/post5.jpg",
       "caption": "Morning workout done 💪 #Fitness",
       "likes": 180,
       "comments": [
-        {
-          "user": "alex_king",
-          "comment": "Motivation 💯"
-        },
-        {
-          "user": "tech_guru",
-          "comment": "Keep it up!"
-        }
+        { "user": "alex_king", "comment": "Motivation 💯" },
+        { "user": "tech_guru", "comment": "Keep it up!" }
       ],
       "timestamp": "2025-02-15T06:30:00Z"
     }
@@ -139,96 +94,64 @@
       "user": {
         "id": 101,
         "username": "john_doe",
-        "profile_pic": "src/assets/profilepic1.png"
+        "profile_pic": "/images/profilepic1.png"
       },
-      "image": "src/assets/s1.png"
+      "image": "/images/s1.png"
     },
     {
       "id": "2",
       "user": {
         "id": 102,
         "username": "sara_smith",
-        "profile_pic": "src/assets/profilepic2.png"
+        "profile_pic": "/images/profilepic2.png"
       },
-      "image": "src/assets/s2.png"
+      "image": "/images/s2.png"
     },
     {
       "id": "3",
       "user": {
         "id": 103,
         "username": "tech_guru",
-        "profile_pic": "src/assets/profilepic3.png"
+        "profile_pic": "/images/profilepic3.png"
       },
-      "image": "src/assets/s3.png"
+      "image": "/images/s3.png"
     },
     {
       "id": "4",
       "user": {
         "id": 104,
         "username": "foodie_life",
-        "profile_pic": "src/assets/profilepic4.png"
+        "profile_pic": "/images/profilepic4.png"
       },
-      "image": "src/assets/s4.png"
+      "image": "/images/s4.png"
     },
     {
       "id": "5",
       "user": {
         "id": 105,
         "username": "fitness_freak",
-        "profile_pic": "src/assets/profilepic5.png"
+        "profile_pic": "/images/profilepic5.png"
       },
-      "image": "src/assets/s5.png"
+      "image": "/images/s5.png"
     }
   ],
   "suggestion": [
-    {
-      "id": "101",
-      "username": "john_doe",
-      "profile_pic": "src/assets/profilepic1.png"
-    },
-    {
-      "id": "102",
-      "username": "sara_smith",
-      "profile_pic": "src/assets/profilepic2.png"
-    },
-    {
-      "id": "103",
-      "username": "tech_guru",
-      "profile_pic": "src/assets/profilepic3.png"
-    },
-    {
-      "id": "104",
-      "username": "foodie_life",
-      "profile_pic": "src/assets/profilepic4.png"
-    },
-    {
-      "id": "105",
-      "username": "fitness_freak",
-      "profile_pic": "src/assets/profilepic5.png"
-    }
+    { "id": "101", "username": "john_doe", "profile_pic": "/images/profilepic1.png" },
+    { "id": "102", "username": "sara_smith", "profile_pic": "/images/profilepic2.png" },
+    { "id": "103", "username": "tech_guru", "profile_pic": "/images/profilepic3.png" },
+    { "id": "104", "username": "foodie_life", "profile_pic": "/images/profilepic4.png" },
+    { "id": "105", "username": "fitness_freak", "profile_pic": "/images/profilepic5.png" }
   ],
   "profile": {
     "id": 104,
     "username": "foodie_life",
-    "profile_pic": "src/assets/profilepic1.png"
+    "profile_pic": "/images/profilepic1.png"
   },
   "followers": [
-    {
-      "id": "y86ggJgD9X4",
-      "username": "foodie_life"
-    },
-    {
-      "id": "QpF4KrL73nw",
-      "username": "john_doe"
-    },
-    {
-      "id": "hz9c8ie47N8",
-      "username": "tech_guru"
-    },
-    {
-      "id": "RYE7QbQO2eY",
-      "username": "sara_smith"
-    }
+    { "id": "y86ggJgD9X4", "username": "foodie_life" },
+    { "id": "QpF4KrL73nw", "username": "john_doe" },
+    { "id": "hz9c8ie47N8", "username": "tech_guru" },
+    { "id": "RYE7QbQO2eY", "username": "sara_smith" }
   ],
   "$schema": "./node_modules/json-server/schema.json"
 }

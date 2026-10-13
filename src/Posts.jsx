@@ -6,10 +6,10 @@ function Posts() {
 
    
     useEffect(() => {
-        fetch('http://localhost:3000/posts')
+        fetch('/db/db.json')
             .then((response) =>
                 response.json())
-            .then((data) => setpost(data))
+            .then((data) => setpost(data.posts))
     }, [])
     const handlelike=(postId)=>{
          setpost((prevposts)=>
@@ -25,7 +25,7 @@ function Posts() {
     return (
 
         <div className=' d-flex justify-content-center'>
-            {post.length > 0 ? (
+            {post && post.length > 0 ? (
                 <div>
                     {post.map((post) => (
                         <div className='my-3' key={post.id}>

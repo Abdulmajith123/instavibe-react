@@ -6,15 +6,13 @@ function Profile() {
        const [followers,setfollowers]=useState([]);
        const[unfollow,setunfollow]=useState(0);
 useEffect(()=>{
-    axios.get('http://localhost:3000/profile')
-    .then((data)=>setprofile(data.data))
-    .catch((err) =>console.log(err))
-
- axios.get('http://localhost:3000/followers')
- .then((data)=>setfollowers(data.data))
- .catch((err) =>console.log(err))
-
-},[unfollow])
+      axios.get('/db/db.json')
+        .then((response) => {
+            setprofile(response.data.profile);
+            setfollowers(response.data.followers);
+        })
+        .catch((err) => console.log('Error loading profile:', err));
+}, []);
 
 function handleonchange(e){
  setprofile(prev =>({
@@ -23,12 +21,16 @@ function handleonchange(e){
 
  
 }
-const handleunfollow=async(id)=>{
-    axios.delete(`http://localhost:3000/followers/${id}`)
-    .then(alert("unfollowed"))
-    .then(setunfollow(!unfollow))
-    .catch(err=>(console.log(err)))
- }
+
+   const handleunfollow = (id) => {
+    setfollowers((prevFollowers) =>
+        prevFollowers.filter(
+            (follower) => follower.id !== id
+        )
+    );
+
+    alert('Unfollowed');
+};
   return (
     <>
     <div className='m-3'>

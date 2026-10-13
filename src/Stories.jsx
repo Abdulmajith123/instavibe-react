@@ -5,10 +5,10 @@ function Stories() {
   const [story, setstory] = useState([])
  const navigate=useNavigate();
   useEffect(() => {
-    fetch('http://localhost:3000/story')
+    fetch('/db/db.json')
       .then((response) =>
         response.json())
-      .then((data) => setstory(data))
+      .then((data) => setstory(data.story))
   }, [])
 const tot=story.length;
 
@@ -17,7 +17,7 @@ const tot=story.length;
 <>
 <div className='d-flex gap-2 story  '>
   <div className='d-none'>{tot}</div>
-      {story.length > 0 ? (
+      { story && story.length > 0 ? (
         story.map((item) => (
           <div className='my-3 story ' key={item.id} onClick={()=>{navigate(`/story/${item.id}/${tot}`)}}>
              <div >
